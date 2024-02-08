@@ -4,6 +4,7 @@ const cors = require('cors')
 const app = new express()
 const router = require('./router')
 const cookieParser = require('cookie-parser')
+const logger = require('./winston/index')
 
 app.use(cors())
 app.use(express.json())
